@@ -1,7 +1,7 @@
 const singleDigit = ["", "one" , "two" , "three" , "four" , "five" , "six" , "seven" , "eight" , "nine" ];
 const tenDigit = ["", "ten" , "twenty" , "thirty" , "forty" , "fifty" , "sixty" , "seventy" , "eighty" , "ninety" ];
 const tens = [ "ten" , "eleven" , "twelve" , "thirteen" , "fourteen" , "fifteen" , "sixteen" , "seventeen" , "eighteen" , "nineteen" ];
-const hundredsDigit = ["" , "one-hundred" , "two-hundred" , "three-hundred" , "four-hundred" , "five-hundred" , "six-hundred" , "eight-hundred" , "nine-hundred" ];
+const hundredsDigit = ["" , "one-hundred" , "two-hundred" , "three-hundred" , "four-hundred" , "five-hundred" , "six-hundred" , "seven-hundred" , "eight-hundred" , "nine-hundred" ];
 const thousandsDigit = ["" , "one-thousand" , "two-thousand" , "three-thousand" , "four-thousand" , "five-thousand" , "six-thousand" , "seven-thousand" , "eight-thousand" , "nine-thousand" ];
 const main = document.createElement("main");
 
@@ -62,5 +62,8 @@ function fourDigits(arrNum){
     return thousandsDigit[arrNum[0]] + " " + threeDigits(hundreds);
 }
 
-wordReturn();
+for(let i = 1;i <= 1000;i++){
+    wordReturn(i);
+}
+// wordReturn();
 document.body.appendChild(main);
